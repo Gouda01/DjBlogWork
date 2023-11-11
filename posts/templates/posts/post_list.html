@@ -1,0 +1,8 @@
+
+<h3>Posts List</h3>
+
+<ul>
+    {% for post in mahmoud %}
+    <li><a href="/posts/{{post.id}}">{{post}}</a> - Writen by {{post.author}}</li>
+    {% endfor %}
+</ul>
