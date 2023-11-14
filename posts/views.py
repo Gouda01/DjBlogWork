@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 from .models import Post
 
 # Create your views here.
@@ -25,4 +26,5 @@ def post_details(request,post_id):
     }
 
     return render (request,'posts/post_details.html',context)
+
 
