@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'django_bootstrap5',
     'rest_framework',
+    'django_filters',
     'drf_yasg',
 
     'posts',
@@ -57,6 +58,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
+
 
 ROOT_URLCONF = 'project.urls'
 

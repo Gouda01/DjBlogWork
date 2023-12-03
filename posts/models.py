@@ -10,7 +10,6 @@ from django.contrib.auth.models import User
 class Post (models.Model) :
     
     author          = models.ForeignKey(User,related_name='post_author',on_delete=models.CASCADE)
-
     title           = models.CharField(max_length=100)
     content         = models.TextField(max_length=20000)
     draft           = models.BooleanField(default=True)
